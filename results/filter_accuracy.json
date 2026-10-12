@@ -1,0 +1,190 @@
+{
+ "n_expected": 13,
+ "exact_match": 0,
+ "exact_rate": 0.0,
+ "n_no_expected": 27,
+ "n_missing_row": 0,
+ "by_field": {
+  "doc_type": {
+   "tp": 0,
+   "wrong": 0,
+   "fn": 11,
+   "n": 11,
+   "precision": null,
+   "recall": 0.0
+  },
+  "issuer": {
+   "tp": 0,
+   "wrong": 0,
+   "fn": 6,
+   "n": 6,
+   "precision": null,
+   "recall": 0.0
+  },
+  "product": {
+   "tp": 0,
+   "wrong": 0,
+   "fn": 2,
+   "n": 2,
+   "precision": null,
+   "recall": 0.0
+  },
+  "generation": {
+   "tp": 0,
+   "wrong": 0,
+   "fn": 1,
+   "n": 1,
+   "precision": null,
+   "recall": 0.0
+  },
+  "effective_on": {
+   "tp": 0,
+   "wrong": 0,
+   "fn": 3,
+   "n": 3,
+   "precision": null,
+   "recall": 0.0
+  }
+ },
+ "mismatches": [
+  {
+   "id": "S01",
+   "field": "doc_type",
+   "expected": "표준약관",
+   "got": null
+  },
+  {
+   "id": "S01",
+   "field": "product",
+   "expected": "신용카드",
+   "got": null
+  },
+  {
+   "id": "S03",
+   "field": "issuer",
+   "expected": "하나은행",
+   "got": null
+  },
+  {
+   "id": "S03",
+   "field": "effective_on",
+   "expected": "latest",
+   "got": null
+  },
+  {
+   "id": "S08",
+   "field": "doc_type",
+   "expected": "법령",
+   "got": null
+  },
+  {
+   "id": "S13",
+   "field": "doc_type",
+   "expected": "특약",
+   "got": null
+  },
+  {
+   "id": "S15",
+   "field": "issuer",
+   "expected": "하나은행",
+   "got": null
+  },
+  {
+   "id": "S15",
+   "field": "doc_type",
+   "expected": "약관",
+   "got": null
+  },
+  {
+   "id": "S15",
+   "field": "effective_on",
+   "expected": "2013-07-01",
+   "got": null
+  },
+  {
+   "id": "S16",
+   "field": "issuer",
+   "expected": "하나은행",
+   "got": null
+  },
+  {
+   "id": "S16",
+   "field": "doc_type",
+   "expected": "약관",
+   "got": null
+  },
+  {
+   "id": "S17",
+   "field": "doc_type",
+   "expected": "특약",
+   "got": null
+  },
+  {
+   "id": "S17",
+   "field": "issuer",
+   "expected": "카카오뱅크",
+   "got": null
+  },
+  {
+   "id": "S19",
+   "field": "issuer",
+   "expected": "카카오뱅크",
+   "got": null
+  },
+  {
+   "id": "S19",
+   "field": "effective_on",
+   "expected": "2019-07-22",
+   "got": null
+  },
+  {
+   "id": "S26",
+   "field": "doc_type",
+   "expected": "분쟁조정사례",
+   "got": null
+  },
+  {
+   "id": "S28",
+   "field": "doc_type",
+   "expected": "분쟁조정사례",
+   "got": null
+  },
+  {
+   "id": "S29",
+   "field": "doc_type",
+   "expected": "분쟁조정사례",
+   "got": null
+  },
+  {
+   "id": "S35",
+   "field": "doc_type",
+   "expected": "표준약관",
+   "got": null
+  },
+  {
+   "id": "S35",
+   "field": "product",
+   "expected": "실손의료보험",
+   "got": null
+  },
+  {
+   "id": "S35",
+   "field": "generation",
+   "expected": "5세대",
+   "got": null
+  },
+  {
+   "id": "S38",
+   "field": "issuer",
+   "expected": "하나은행",
+   "got": null
+  },
+  {
+   "id": "S38",
+   "field": "doc_type",
+   "expected": "약관",
+   "got": null
+  }
+ ],
+ "source": "results/agentic.json"
+}

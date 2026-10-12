@@ -1,0 +1,240 @@
+{
+ "n": 20,
+ "n_scored": 20,
+ "n_refused": 0,
+ "mean_total": 1.2,
+ "mean_by_item": {
+  "basis_match": 1.2,
+  "numeric_ok": 0.0,
+  "no_extra_claim": 0.0
+ },
+ "full_marks": 0,
+ "by_type": {
+  "상품명조건형": {
+   "n": 6,
+   "mean_total": 1.0,
+   "basis_match": 1.0,
+   "numeric_ok": 0.0,
+   "no_extra_claim": 0.0
+  },
+  "조항번호형": {
+   "n": 8,
+   "mean_total": 1.0,
+   "basis_match": 1.0,
+   "numeric_ok": 0.0,
+   "no_extra_claim": 0.0
+  },
+  "표수치형": {
+   "n": 6,
+   "mean_total": 1.667,
+   "basis_match": 1.667,
+   "numeric_ok": 0.0,
+   "no_extra_claim": 0.0
+  }
+ },
+ "rows": [
+  {
+   "id": "S01",
+   "type": "조항번호형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S02",
+   "type": "조항번호형",
+   "answered": true,
+   "basis_match": 0,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 0,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S03",
+   "type": "조항번호형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S04",
+   "type": "조항번호형",
+   "answered": true,
+   "basis_match": 0,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 0,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S05",
+   "type": "조항번호형",
+   "answered": true,
+   "basis_match": 0,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 0,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S06",
+   "type": "조항번호형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S07",
+   "type": "조항번호형",
+   "answered": true,
+   "basis_match": 0,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 0,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S08",
+   "type": "조항번호형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S09",
+   "type": "상품명조건형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S10",
+   "type": "상품명조건형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S11",
+   "type": "상품명조건형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S12",
+   "type": "상품명조건형",
+   "answered": true,
+   "basis_match": 0,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 0,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S13",
+   "type": "상품명조건형",
+   "answered": true,
+   "basis_match": 0,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 0,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S14",
+   "type": "상품명조건형",
+   "answered": true,
+   "basis_match": 0,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 0,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S20",
+   "type": "표수치형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S21",
+   "type": "표수치형",
+   "answered": true,
+   "basis_match": 0,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 0,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S22",
+   "type": "표수치형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S23",
+   "type": "표수치형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S24",
+   "type": "표수치형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S25",
+   "type": "표수치형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 0,
+   "no_extra_claim": 0,
+   "total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  }
+ ],
+ "generated_at": "2026-10-12T08:45:24+00:00",
+ "llm": "fake",
+ "source": "results/agentic.json"
+}

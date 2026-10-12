@@ -170,4 +170,12 @@ def agreement(judge_scores: list[int], human_labels: list[int]) -> dict:
     왜 셋인가: 완전 일치만 보면 6점 척도에서 한 점 차이도 불일치가 되어 judge 가 쓸모없어 보이고,
     ±1 만 보면 늘 후하게 주는 judge 를 못 잡는다. MAE 가 그 치우침의 크기다.
     """
-    raise NotImplementedError("6회차 실습 2: judge.agreement 를 채우세요")
+    pairs = list(zip(judge_scores, human_labels))   # 길이가 다르면 짧은 쪽까지만
+    n = len(pairs)
+    if n == 0:
+        return {"n": 0}
+    diffs = [abs(int(j) - int(h)) for j, h in pairs]
+    return {"n": n,
+            "exact": round(sum(1 for d in diffs if d == 0) / n, 3),
+            "within_1": round(sum(1 for d in diffs if d <= 1) / n, 3),
+            "mae": round(sum(diffs) / n, 3)}

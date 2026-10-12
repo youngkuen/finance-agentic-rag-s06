@@ -1,0 +1,313 @@
+{
+ "n": 15,
+ "matched": 2,
+ "accuracy": 0.1333,
+ "by_how": {
+  "계산 안 함": 13,
+  "계산 안 함이 정답": 2
+ },
+ "rows": [
+  {
+   "id": "C01",
+   "family": "savings_early_termination",
+   "form": "B",
+   "expected": {
+    "value": 0.875,
+    "unit": "%"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 16593,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C02",
+   "family": "savings_early_termination",
+   "form": "B",
+   "expected": {
+    "value": 0.1,
+    "unit": "%"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 1687,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C03",
+   "family": "savings_early_termination",
+   "form": "C",
+   "expected": {
+    "value": 0.5,
+    "unit": "%"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 954,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C04",
+   "family": "savings_interest_daily",
+   "form": "B",
+   "expected": {
+    "value": 97890,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 890,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C05",
+   "family": "deposit_interest",
+   "form": "compound",
+   "expected": {
+    "value": 304159,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 894,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C06",
+   "family": "loan_prepayment_fee",
+   "form": "days_ratio",
+   "expected": {
+    "value": 466666,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 1079,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C07",
+   "family": "loan_delinquency_interest",
+   "form": "monthly_example",
+   "expected": {
+    "value": 803333,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 962,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C08",
+   "family": "card_overseas_charge",
+   "form": "three_term",
+   "expected": {
+    "value": 1417500,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 883,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C09",
+   "family": "loan_prepayment_fee",
+   "form": "ratio_with_waiver_option",
+   "expected": {
+    "value": 200000,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 993,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C10",
+   "family": "range_answer",
+   "form": "disclosure_range",
+   "expected": {
+    "value": "연 5.60~19.95% (신용점수 구간별 범위)",
+    "unit": "range"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": true,
+   "how": "계산 안 함이 정답",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 927,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C11",
+   "family": "card_delinquency_rate",
+   "form": "cap",
+   "expected": {
+    "value": 20.0,
+    "unit": "%"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 923,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C12",
+   "family": "silson_copay",
+   "form": "outpatient_deductible",
+   "expected": {
+    "value": 32000,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 995,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C13",
+   "family": "silson_copay",
+   "form": "noncovered",
+   "expected": {
+    "value": 105000,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 877,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C14",
+   "family": "cancer_benefit",
+   "form": "reduction_and_waiver",
+   "expected": {
+    "value": 15000000,
+    "unit": "원"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": false,
+   "how": "계산 안 함",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 897,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  },
+  {
+   "id": "C15",
+   "family": "abstain",
+   "form": "surrender_value",
+   "expected": {
+    "value": null,
+    "unit": "abstain"
+   },
+   "got": null,
+   "unit": null,
+   "tool": null,
+   "abstain_reason": null,
+   "matched": true,
+   "how": "계산 안 함이 정답",
+   "grade": "sufficient",
+   "retry_count": 0,
+   "answered": true,
+   "latency_ms": 951,
+   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+  }
+ ],
+ "generated_at": "2026-10-12T08:45:53+00:00",
+ "llm": "fake"
+}

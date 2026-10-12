@@ -49,7 +49,52 @@ def aggregate(rows: list[dict], ks: tuple[int, ...] = (1, 3, 5, 10)) -> dict:
     왜 분모를 가르나: 오거절률(답할 수 있는데 거절)과 미답변 정확도(거절해야 할 것을 거절)는
     분모가 다르다. 둘을 한 숫자로 합치면 "전부 거절"이 좋은 점수를 받는다.
     """
-    raise NotImplementedError("6회차 실습 1: metrics.aggregate 를 채우세요")
+    def block(subset: list[dict]) -> dict:
+        n = len(subset)
+        out: dict = {"n": n}
+        if n == 0:
+            return out
+
+        def mean(vals: list[float], nd: int = 4) -> float:
+            return round(sum(vals) / len(vals), nd)
+
+        # 검색 지표. 전체 평균. 키가 없는 행은 그 지표의 분모에서 뺀다.
+        for k in ks:
+            key = f"recall@{k}"
+            vals = [float(r[key]) for r in subset if key in r]
+            if vals:
+                out[key] = mean(vals)
+        vals = [float(r["mrr"]) for r in subset if "mrr" in r]
+        if vals:
+            out["mrr"] = mean(vals)
+
+        # 답변 지표. baseline · hybrid 결과에는 answered 가 없으니 자리를 만들지 않는다.
+        with_ans = [r for r in subset if "answered" in r]
+        if with_ans:
+            out["answer_rate"] = mean([1.0 if r["answered"] else 0.0 for r in with_ans])
+            # 오거절률: 답할 근거가 있는데(answerable) 거절한 비율. 분모는 answerable 행만.
+            answerable = [r for r in with_ans if r.get("answerable", True)]
+            if answerable:
+                out["false_refusal_rate"] = mean([0.0 if r["answered"] else 1.0 for r in answerable])
+            # 미답변 정확도: 거절해야 할 문항 중 거절했거나 한계를 밝힌(insufficient) 비율. 분모는 그 행만.
+            unanswerable = [r for r in with_ans if not r.get("answerable", True)]
+            if unanswerable:
+                out["abstain_accuracy"] = mean([
+                    1.0 if (not r["answered"] or r.get("grade") == "insufficient") else 0.0
+                    for r in unanswerable])
+
+        # 지연. p95 는 정렬한 뒤 int(n × 0.95) − 1 번째(0 미만이면 0).
+        lat = sorted(float(r["latency_ms"]) for r in subset if r.get("latency_ms") is not None)
+        if lat:
+            out["latency_ms_avg"] = round(sum(lat) / len(lat), 1)
+            out["latency_ms_p95"] = round(lat[max(int(len(lat) * 0.95) - 1, 0)], 1)
+        return out
+
+    by_type: dict[str, list[dict]] = defaultdict(list)
+    for r in rows:
+        by_type[str(r.get("type", "기타"))].append(r)
+    return {"overall": block(rows),
+            "by_type": {t: block(rs) for t, rs in sorted(by_type.items())}}
 
 
 def compare(tables: dict[str, dict], metric: str = "recall@5") -> list[dict]:

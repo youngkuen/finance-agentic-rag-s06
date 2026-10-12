@@ -1,0 +1,306 @@
+{
+ "n": 17,
+ "agreement": {
+  "total": {
+   "n": 17,
+   "exact": 0.059,
+   "within_1": 0.118,
+   "mae": 3.235
+  },
+  "basis_match": {
+   "n": 17,
+   "exact": 0.941,
+   "within_1": 1.0,
+   "mae": 0.059
+  },
+  "numeric_ok": {
+   "n": 17,
+   "exact": 0.235,
+   "within_1": 0.235,
+   "mae": 1.529
+  },
+  "no_extra_claim": {
+   "n": 17,
+   "exact": 0.059,
+   "within_1": 0.176,
+   "mae": 1.765
+  }
+ },
+ "judge_minus_human_avg": -3.235,
+ "rows": [
+  {
+   "id": "S01",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S02",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S03",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 1,
+    "numeric_ok": 0,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 3,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S06",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S07",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 1
+   },
+   "judge_total": 2,
+   "human_total": 5,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S08",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S09",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S10",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S11",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S12",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S13",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S14",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "judge_total": 2,
+   "human_total": 2,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S20",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 4,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S22",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 4,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S23",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 1
+   },
+   "judge_total": 2,
+   "human_total": 5,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S24",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  },
+  {
+   "id": "S25",
+   "judge": {
+    "basis_match": 2,
+    "numeric_ok": 0,
+    "no_extra_claim": 0
+   },
+   "human": {
+    "basis_match": 2,
+    "numeric_ok": 2,
+    "no_extra_claim": 2
+   },
+   "judge_total": 2,
+   "human_total": 6,
+   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+  }
+ ],
+ "generated_at": "2026-10-12T08:45:24+00:00",
+ "llm": "fake"
+}
