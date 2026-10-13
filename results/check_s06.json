@@ -1,7 +1,7 @@
 {
  "session": 6,
- "generated_at": "2026-10-12T09:06:43+00:00",
- "passed": 4,
+ "generated_at": "2026-10-13T04:57:39+00:00",
+ "passed": 5,
  "total": 5,
  "checks": {
   "3단계 비교표": {
@@ -13,16 +13,16 @@
    "detail": "둘 다 있음"
   },
   "judge 20문항": {
-   "ok": false,
-   "detail": "20문항 평균 1.2/6 (가짜 모델)"
+   "ok": true,
+   "detail": "20문항 평균 3.737/6"
   },
   "계산 정확도 기록": {
    "ok": true,
-   "detail": "2/15 맞음"
+   "detail": "9/15 맞음"
   },
   "ROI 문서": {
    "ok": true,
-   "detail": "3,525자"
+   "detail": "3,265자"
   }
  }
 }

@@ -1,35 +1,35 @@
 {
  "n": 20,
- "n_scored": 20,
- "n_refused": 0,
- "mean_total": 1.2,
+ "n_scored": 19,
+ "n_refused": 1,
+ "mean_total": 3.737,
  "mean_by_item": {
-  "basis_match": 1.2,
-  "numeric_ok": 0.0,
-  "no_extra_claim": 0.0
+  "basis_match": 1.684,
+  "numeric_ok": 1.421,
+  "no_extra_claim": 0.632
  },
- "full_marks": 0,
+ "full_marks": 4,
  "by_type": {
   "상품명조건형": {
    "n": 6,
-   "mean_total": 1.0,
-   "basis_match": 1.0,
-   "numeric_ok": 0.0,
-   "no_extra_claim": 0.0
+   "mean_total": 5.0,
+   "basis_match": 2.0,
+   "numeric_ok": 1.667,
+   "no_extra_claim": 1.333
   },
   "조항번호형": {
-   "n": 8,
-   "mean_total": 1.0,
-   "basis_match": 1.0,
-   "numeric_ok": 0.0,
-   "no_extra_claim": 0.0
+   "n": 7,
+   "mean_total": 3.429,
+   "basis_match": 1.714,
+   "numeric_ok": 1.429,
+   "no_extra_claim": 0.286
   },
   "표수치형": {
    "n": 6,
-   "mean_total": 1.667,
-   "basis_match": 1.667,
-   "numeric_ok": 0.0,
-   "no_extra_claim": 0.0
+   "mean_total": 2.833,
+   "basis_match": 1.333,
+   "numeric_ok": 1.167,
+   "no_extra_claim": 0.333
   }
  },
  "rows": [
@@ -38,20 +38,20 @@
    "type": "조항번호형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "numeric_ok": 2,
+   "no_extra_claim": 1,
+   "total": 5,
+   "reason": "제31조 관련 정의와 제35조 수수료 설명을 인용해 정답 요지를 잘 맞췄으나, ‘10~100%’, ‘10% 이상’ 등 제31조 요지 밖의 일반 설명이 섞여 있어 근거 범위를 약간 벗어났습니다."
   },
   {
    "id": "S02",
    "type": "조항번호형",
    "answered": true,
-   "basis_match": 0,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 0,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "basis_match": 2,
+   "numeric_ok": 2,
+   "no_extra_claim": 1,
+   "total": 5,
+   "reason": "제34조의 해약환급금 계산 근거인 산출방법서를 맞게 인용했으나, 답변에 근거 문구 외의 일반 설명(다른 조항 문구 확인 등)이 섞여 있어 no_extra_claim은 1입니다."
   },
   {
    "id": "S03",
@@ -61,17 +61,12 @@
    "numeric_ok": 0,
    "no_extra_claim": 0,
    "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답은 7영업일 전 서면 통지인데 제출 답변은 3영업일 전으로 수치가 틀렸고, 답변에 없는 후속 효력까지 추가로 진술했다."
   },
   {
    "id": "S04",
    "type": "조항번호형",
-   "answered": true,
-   "basis_match": 0,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 0,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "answered": false
   },
   {
    "id": "S05",
@@ -81,160 +76,160 @@
    "numeric_ok": 0,
    "no_extra_claim": 0,
    "total": 0,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "gold 근거(fss_credit_terms_2024_pdf#제4조의2#1)를 인용하지 않았고, 질문의 14일 기한과 달리 기한을 확인할 수 없다고 답해 정답과 불일치하며, 인용 범위 밖의 일반론이 섞였습니다."
   },
   {
    "id": "S06",
    "type": "조항번호형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
+   "numeric_ok": 2,
    "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "total": 4,
+   "reason": "정답 근거인 knia_18259#제7조#2 및 knia_18259#제22조#5를 인용해 15일 이내와 30일 초과 불가를 맞게 제시했으나, 진단계약·1년 미만·전문보험계약자 제외 등 질문에 없는 다른 조항 내용이 추가되어 근거 밖 주장입니다."
   },
   {
    "id": "S07",
    "type": "조항번호형",
    "answered": true,
-   "basis_match": 0,
-   "numeric_ok": 0,
+   "basis_match": 2,
+   "numeric_ok": 2,
    "no_extra_claim": 0,
-   "total": 0,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "total": 4,
+   "reason": "제6조 3·4항을 인용해 1년 미만 시 50% 지급과 최초 1회 한정을 맞게 답했으나, ‘암 보장개시일 이후’ 같은 문서 외 설명과 별표1 예시를 덧붙여 근거 밖 진술이 섞였습니다."
   },
   {
    "id": "S08",
    "type": "조항번호형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
+   "numeric_ok": 2,
    "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "total": 4,
+   "reason": "제19조 제1항 청크를 인용해 근거 일치는 충족했으나, 보험회사 임직원 준용 등 정답 범위를 벗어난 추가 진술이 있어 근거 밖 주장 없음은 0점입니다."
   },
   {
    "id": "S09",
    "type": "상품명조건형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "numeric_ok": 2,
+   "no_extra_claim": 2,
+   "total": 6,
+   "reason": "정답 근거 청크를 인용했고, 가입대상/비대상 설명이 근거 범위 내이며 문서에 없는 추가 사실도 없다."
   },
   {
    "id": "S10",
    "type": "상품명조건형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
+   "numeric_ok": 2,
    "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "total": 4,
+   "reason": "계약기간과 월 저축한도는 정답 근거와 일치하며 수치·단위도 적절히 표기했지만, ‘한 은행의 월 저축한도는 최대 30만원’은 질문 범위를 넘는 추가 주장이다."
   },
   {
    "id": "S11",
    "type": "상품명조건형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "numeric_ok": 2,
+   "no_extra_claim": 2,
+   "total": 6,
+   "reason": "계약기간과 가입금액 범위를 gold 근거 청크와 일치하게 제시했고, 수치·단위도 정확하며, 인용 범위 밖의 추가 주장도 없다."
   },
   {
    "id": "S12",
    "type": "상품명조건형",
    "answered": true,
-   "basis_match": 0,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 0,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "basis_match": 2,
+   "numeric_ok": 2,
+   "no_extra_claim": 2,
+   "total": 6,
+   "reason": "정답 근거 청크(kakao_deposit_2026_txt#본문#5, kakao_deposit_terms_2024#제4조#1)를 인용 범위에 포함했고, 최소 가입금액 100만원 이상을 정확히 제시했으며 기준일도 함께 표기했다."
   },
   {
    "id": "S13",
    "type": "상품명조건형",
    "answered": true,
-   "basis_match": 0,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 0,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "basis_match": 2,
+   "numeric_ok": 2,
+   "no_extra_claim": 2,
+   "total": 6,
+   "reason": "정답 요지와 동일한 ‘만 14세 이상의 실명의 개인’을 답했고, 근거 조항(kakao_deposit_terms_2024#제3조#1)도 포함되어 있으며 추가 주장도 없습니다."
   },
   {
    "id": "S14",
    "type": "상품명조건형",
    "answered": true,
-   "basis_match": 0,
+   "basis_match": 2,
    "numeric_ok": 0,
    "no_extra_claim": 0,
-   "total": 0,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "total": 2,
+   "reason": "gold 근거가 포함된 청크를 인용해 basis는 맞지만, 정답인 ‘만기 1개월 미만’과 최초 취급일로부터 3년 적용을 정확히 답하지 못했고, 문서에 없는 ‘유지기간 합산 3년 경과 후 해지’ 일반론을 추가로 진술했다."
   },
   {
    "id": "S20",
    "type": "표수치형",
    "answered": true,
-   "basis_match": 2,
+   "basis_match": 0,
    "numeric_ok": 0,
    "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "total": 0,
+   "reason": "정답 구간과 다른 인지세·고객부담 금액을 제시했고, 근거로 제시한 청크도 정답 근거와 불일치하며 표 밖 일반 설명이 섞였습니다."
   },
   {
    "id": "S21",
+   "type": "표수치형",
+   "answered": true,
+   "basis_match": 2,
+   "numeric_ok": 2,
+   "no_extra_claim": 1,
+   "total": 5,
+   "reason": "정답 요지의 산식·최저금리·경과월수 절상 규칙은 맞고 금액/단위도 표기했으나, 제시 답변의 ‘2021.03.24. 세전’ 및 ‘계산 결과가 연 0.2% 미만이면…’ 같은 문구는 근거 범위 밖의 일반론으로 볼 여지가 있다."
+  },
+  {
+   "id": "S22",
    "type": "표수치형",
    "answered": true,
    "basis_match": 0,
    "numeric_ok": 0,
    "no_extra_claim": 0,
    "total": 0,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
-  },
-  {
-   "id": "S22",
-   "type": "표수치형",
-   "answered": true,
-   "basis_match": 2,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답 근거는 kbcard_rates_html#본문#1인데 제출 답변은 5.90~19.95%로 다른 수치를 제시해 근거 일치와 수치가 모두 틀립니다. 또한 카드론 항목의 구간값이 없다고 단정하는 등 근거 밖 주장이 섞여 있습니다."
   },
   {
    "id": "S23",
    "type": "표수치형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
+   "numeric_ok": 2,
    "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "total": 4,
+   "reason": "정답 근거 청크를 인용했고(3개월 이상 6개월 미만, 약정이율×55%), 수치·단위도 세전 연이율로 맞게 표기했으나 ‘실제 금액 계산은 해당 시점의 약정이율이 있어야’ 같은 문서 밖 일반론이 섞여 있습니다."
   },
   {
    "id": "S24",
    "type": "표수치형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
+   "numeric_ok": 1,
    "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "total": 3,
+   "reason": "정답 수치 1.4%는 맞지만 해외서비스 수수료 0.25% 별도와 기준일/절사 규칙 표기가 없고, AMEX 수수료를 가맹점이용·현금서비스에만 적용된다고 단정하는 등 근거 밖 일반론이 섞였습니다."
   },
   {
    "id": "S25",
    "type": "표수치형",
    "answered": true,
    "basis_match": 2,
-   "numeric_ok": 0,
-   "no_extra_claim": 0,
-   "total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "numeric_ok": 2,
+   "no_extra_claim": 1,
+   "total": 5,
+   "reason": "정답 요지와 수치는 맞고 정답 근거 청크를 인용했으나, ‘[대출이자율 + 연체기간별 연체가산이자율]’ 등 인용 범위를 넘어선 일반 설명이 섞여 있습니다."
   }
  ],
- "generated_at": "2026-10-12T08:45:24+00:00",
- "llm": "fake",
+ "generated_at": "2026-10-13T04:44:10+00:00",
+ "llm": "openai:gpt-5.4-mini",
  "source": "results/agentic.json"
 }

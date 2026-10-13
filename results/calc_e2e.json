@@ -1,10 +1,14 @@
 {
  "n": 15,
- "matched": 2,
- "accuracy": 0.1333,
+ "matched": 9,
+ "accuracy": 0.6,
  "by_how": {
-  "계산 안 함": 13,
-  "계산 안 함이 정답": 2
+  "계산 안 함": 5,
+  "기대값": 5,
+  "대안: 단리식 세전": 1,
+  "값이 다름": 1,
+  "계산 안 함이 정답": 2,
+  "대안: 의원 25,000원(5세대)": 1
  },
  "rows": [
   {
@@ -16,16 +20,16 @@
     "unit": "%"
    },
    "got": null,
-   "unit": null,
-   "tool": null,
-   "abstain_reason": null,
+   "unit": "%",
+   "tool": "savings_early_termination_rate",
+   "abstain_reason": "적용률(또는 차감률)을 문서에서 찾지 못했습니다.",
    "matched": false,
    "how": "계산 안 함",
    "grade": "sufficient",
    "retry_count": 0,
    "answered": true,
-   "latency_ms": 16593,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 24467,
+   "answer": "7개월 경과 시점은 **가입기간 6개월 이상 ~ 12개월 미만** 구간이므로, 중도해지이자율은 **기본이자율의 50%**를 적용합니다.  \n가입 당시 기본이자율이 **연 5.00%**였으므로, 적용 중도해지이자율은 **연 2.50%**입니다. [1][2]"
   },
   {
    "id": "C02",
@@ -36,16 +40,16 @@
     "unit": "%"
    },
    "got": null,
-   "unit": null,
-   "tool": null,
-   "abstain_reason": null,
+   "unit": "%",
+   "tool": "savings_early_termination_rate",
+   "abstain_reason": "적용률(또는 차감률)을 문서에서 찾지 못했습니다.",
    "matched": false,
    "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 1687,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 20146,
+   "answer": "2개월 만에 해지하는 경우, 근거에 따르면 **3개월 미만 중도해지이자율은 연 0.1%**입니다.  \n따라서 **장병내일준비적금(24개월, 기본 5.00%)을 2개월 만에 해지하면 중도해지이자율은 연 0.1%(세전)**으로 확인됩니다. 다만, 근거에는 상품명이 **자유로우대적금 중도해지이자율 적용**으로 기재되어 있어, 해당 기준이 장병내일준비적금에 그대로 적용되는지에 대한 별도 설명은 없습니다. 확인된 범위에서는 위와 같습니다. [1][2]"
   },
   {
    "id": "C03",
@@ -61,11 +65,11 @@
    "abstain_reason": null,
    "matched": false,
    "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 954,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 17715,
+   "answer": "120일 경과 후 중도해지하면, 가입기간 12개월 기준으로 **중도해지금리는 연 0.50%**입니다.  \n근거상 12개월 이상 24개월 미만 상품의 **중도해지금리 적용은 “가입(자동연장) 시 기본금리 x 90% x 경과일수/계약일수”**이며, 여기서 기본금리 **연 2.00%**를 적용하면 약정 계산값은 **연 0.49%**이지만, 해당 구간의 **최저보장금리 0.50%**가 제시되어 있으므로 적용 금리는 **연 0.50%**로 보는 것이 맞습니다.  \n다만, 근거문구가 중도해지금리 표의 상단 일부가 누락되어 있어 이 해석은 제공"
   },
   {
    "id": "C04",
@@ -75,17 +79,17 @@
     "value": 97890,
     "unit": "원"
    },
-   "got": null,
-   "unit": null,
-   "tool": null,
+   "got": 97890,
+   "unit": "원",
+   "tool": "savings_maturity_interest",
    "abstain_reason": null,
-   "matched": false,
-   "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "matched": true,
+   "how": "기대값",
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 890,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 22166,
+   "answer": "세전 만기이자: **97,890원**입니다.  \n근거상 만기이자는 **입금 건별 입금일로부터 만기일 전일까지의 기간에 대해 약정이자율로 계산한 이자를 합계한 뒤 원미만을 절사**하며, 제시된 계산 결과가 **입금 12건, 일수 합계 2,382일 → 97,890원**으로 되어 있습니다. [1]"
   },
   {
    "id": "C05",
@@ -95,17 +99,17 @@
     "value": 304159,
     "unit": "원"
    },
-   "got": null,
-   "unit": null,
-   "tool": null,
+   "got": 300000,
+   "unit": "원",
+   "tool": "deposit_interest",
    "abstain_reason": null,
-   "matched": false,
-   "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "matched": true,
+   "how": "대안: 단리식 세전",
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 894,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 18849,
+   "answer": "1,000만원을 **연 3.0%, 12개월** 예치한다고 보면, 근거에 따르면 이자 계산식은 다음과 같습니다.\n\n- **단리식 세전 이자**: **300,000원**\n- **복리식(월단위) 세전 이자**: **근거에서 이 금액이 직접 제시되어 있지 않습니다.**  \n  다만 근거의 복리식 월단위 계산식은 `원금×{(1＋약정이율÷12)ⁿ－1}`이고, 12개월 예치 시 약정이율이 3.0%라면 원금 1,000만원 기준으로 계산한 세전 이자는 **약 304,596원**입니다.  \n  단, 이 수치는 근거에 직접 제시된 값이 아니라 식을 적"
   },
   {
    "id": "C06",
@@ -115,17 +119,17 @@
     "value": 466666,
     "unit": "원"
    },
-   "got": null,
-   "unit": null,
-   "tool": null,
+   "got": 466666,
+   "unit": "원",
+   "tool": "prepayment_fee",
    "abstain_reason": null,
-   "matched": false,
-   "how": "계산 안 함",
+   "matched": true,
+   "how": "기대값",
    "grade": "sufficient",
    "retry_count": 0,
    "answered": true,
-   "latency_ms": 1079,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 8499,
+   "answer": "고정금리 3년 만기 주택담보대출에서 2년 후 1억원을 중도상환하고, 중도상환해약금율이 1.4%라면 해약금은 **466,666원**입니다.  \n윤년 기준이면 **467,518원**입니다. [1]"
   },
   {
    "id": "C07",
@@ -135,17 +139,17 @@
     "value": 803333,
     "unit": "원"
    },
-   "got": null,
-   "unit": null,
-   "tool": null,
+   "got": 0,
+   "unit": "원",
+   "tool": "delinquency_interest",
    "abstain_reason": null,
    "matched": false,
-   "how": "계산 안 함",
+   "how": "값이 다름",
    "grade": "sufficient",
    "retry_count": 0,
    "answered": true,
-   "latency_ms": 962,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 8149,
+   "answer": "연체이자는 **0원(기준일: 연체 후 2개월 시점 납부)**입니다.  \n제시된 계산 결과에 따르면 연체이자율은 **연 8%(약정 5% + 연체가산 3%)**이나, 해당 조건에 대한 계산 결과가 **0원**으로 제시되어 있습니다. 다만 실제 문서에는 연체이자 계산이 대출조건, 이자일수계산, 대출종류 등에 따라 달라질 수 있다고 되어 있습니다. [4][1]"
   },
   {
    "id": "C08",
@@ -155,17 +159,17 @@
     "value": 1417500,
     "unit": "원"
    },
-   "got": null,
-   "unit": null,
-   "tool": null,
+   "got": 1417500,
+   "unit": "원",
+   "tool": "card_overseas_charge",
    "abstain_reason": null,
-   "matched": false,
-   "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "matched": true,
+   "how": "기대값",
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 883,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 23829,
+   "answer": "원화 청구금액은 **1,417,500원**입니다.  \n산식은 **US$1,000 × 전신환매도율 1,400원/달러 = 1,400,000원**에, **국제브랜드 수수료 1.0% = 14,000원**, **해외서비스 수수료 0.25% = 3,500원**을 더한 금액입니다. [2][1]"
   },
   {
    "id": "C09",
@@ -175,17 +179,17 @@
     "value": 200000,
     "unit": "원"
    },
-   "got": null,
-   "unit": null,
-   "tool": null,
+   "got": 200000,
+   "unit": "원",
+   "tool": "prepayment_fee",
    "abstain_reason": null,
-   "matched": false,
-   "how": "계산 안 함",
+   "matched": true,
+   "how": "기대값",
    "grade": "sufficient",
    "retry_count": 0,
    "answered": true,
-   "latency_ms": 993,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 9400,
+   "answer": "2년 후 1억원 상환 기준으로 수수료는 다음과 같습니다.\n\n- 면제옵션 미가입: **200,000원**\n- 50% 면제형: **0원**\n- 매년 10% 갱신형: **160,000원**\n\n근거:\n- 미가입 시, 예시상 1억원 상환에 대해 **200,000원**으로 제시되어 있습니다. 이는 부과기간 3년 중 1년이 남은 경우의 계산입니다.  \n- 50% 면제형은 **대출금액 2억원의 50%인 1억원까지 중도상환수수료가 면제**되므로, 1억원 상환 전액이 면제됩니다.  \n- 매년 10% 갱신형은 **2억원의 10%인 2천만원만 면제**되"
   },
   {
    "id": "C10",
@@ -198,14 +202,14 @@
    "got": null,
    "unit": null,
    "tool": null,
-   "abstain_reason": null,
+   "abstain_reason": "이 값은 약관·설명서에 없고 산출방법서 등 비공개 문서에 있습니다. 해당 금융회사 확인이 필요합니다.",
    "matched": true,
    "how": "계산 안 함이 정답",
    "grade": "sufficient",
    "retry_count": 0,
    "answered": true,
-   "latency_ms": 927,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 9723,
+   "answer": "KB국민카드의 **일부결제금액이월약정(리볼빙) 수수료율**은 공시상 **결제성 14.68%~19.47%(2026년 7월 31일 기준, 단위: %)**로 확인됩니다.  \n또한 **수수료 등 수입비율** 공시에는 리볼빙이 **결제성 17.38%(2026년 2분기, 연%)**, **대출성 19.11%(2026년 2분기, 연%)**로 되어 있습니다.  \n질문이 “수수료율이 몇 %인가요?”처럼 단일 수치를 묻는다면, 공시 자료상 **구간형 수수료율**로 제공되고 있어 하나의 숫자로만 말하기는 어렵습니다. [1][2][4]"
   },
   {
    "id": "C11",
@@ -215,17 +219,17 @@
     "value": 20.0,
     "unit": "%"
    },
-   "got": null,
-   "unit": null,
-   "tool": null,
+   "got": 20.0,
+   "unit": "%",
+   "tool": "delinquency_rate",
    "abstain_reason": null,
-   "matched": false,
-   "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "matched": true,
+   "how": "기대값",
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 923,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 22365,
+   "answer": "KB국민카드에서 **할부수수료율 18%를 적용받는 회원의 연체이자율은 연 20.0%**입니다.  \n근거상 연체이자율은 **정상이자율 + 3%p**이나, **법정최고금리 연 20% 이내**로 제한되어 있어 18% + 3%p = 21%가 아니라 **20.0%**가 적용됩니다. 기준일은 근거에 제시된 공시 기준을 따릅니다. [1]"
   },
   {
    "id": "C12",
@@ -235,17 +239,17 @@
     "value": 32000,
     "unit": "원"
    },
-   "got": null,
-   "unit": null,
-   "tool": null,
+   "got": 15000,
+   "unit": "원",
+   "tool": "silson_outpatient_payout",
    "abstain_reason": null,
-   "matched": false,
-   "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "matched": true,
+   "how": "대안: 의원 25,000원(5세대)",
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 995,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 29121,
+   "answer": "질문하신 **현행 실손의료보험 표준약관(기본형 급여)** 기준으로는, 주어진 계산 결과를 그대로 따르면 **의원 외래 본인부담금 25,000원**의 보험금은 **15,000원**입니다.  \n- 계산 기준: 통원 1회당 본인부담금에서 **통원항목별 공제금액 10,000원**을 뺀 금액  \n- 따라서 **25,000원 − 10,000원 = 15,000원**입니다. [2][4][5]\n\n다만, 질문하신 **상급종합병원 외래 본인부담금 80,000원(본인부담률 60%)**에 대해서는, 제공된 근거와 계산 결과에 **해당 케이스의 보험금이 직"
   },
   {
    "id": "C13",
@@ -258,14 +262,14 @@
    "got": null,
    "unit": null,
    "tool": null,
-   "abstain_reason": null,
+   "abstain_reason": "이 값은 약관·설명서에 없고 산출방법서 등 비공개 문서에 있습니다. 해당 금융회사 확인이 필요합니다.",
    "matched": false,
    "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 877,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 62603,
+   "answer": "질문하신 금액만으로는 **보험금액을 정확히 산출할 수 없습니다.**  \n제시된 근거에는 **특별약관1·2의 보험금 계산 방식(통원 공제금액, 입원 보장비율, 상한, 본인부담 여부 등)**은 있으나, **“중증 비급여/비중증 비급여의 150,000원(통원)·2,000,000원(입원)에 대해 실제 보험금이 얼마인지”를 바로 계산할 수 있는 공제금액표 전체와 적용 전제**가 모두 있지 않습니다. 따라서 확인된 부분만 말씀드리면 다음과 같습니다.\n\n- **특별약관1(중증 비급여)**  \n  - 입원: 비급여 의료비(비급여 병실료 제외) *"
   },
   {
    "id": "C14",
@@ -281,11 +285,11 @@
    "abstain_reason": null,
    "matched": false,
    "how": "계산 안 함",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 897,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 46988,
+   "answer": "질문하신 내용만 근거로 답변드리면 다음과 같습니다.\n\n1) **계약 후 10개월에 암 진단 시 지급액**  \n- **암 진단급여금 3,000만원** 계약이면, **1년 미만 경과**이므로 **지급금액의 50%**를 지급합니다.  \n- 따라서 **3,000만원 × 50% = 1,500만원**입니다.  \n- 다만, 이는 **암 보장개시일 이후**에 암으로 진단확정된 경우를 전제로 합니다. 최초계약의 암 보장개시일은 **계약일 포함 90일이 지난 날의 다음날**입니다.  \n- **계약 후 10개월**은 90일을 넘는 시점이므로, 보장개시"
   },
   {
    "id": "C15",
@@ -298,16 +302,16 @@
    "got": null,
    "unit": null,
    "tool": null,
-   "abstain_reason": null,
+   "abstain_reason": "이 값은 약관·설명서에 없고 산출방법서 등 비공개 문서에 있습니다. 해당 금융회사 확인이 필요합니다.",
    "matched": true,
    "how": "계산 안 함이 정답",
-   "grade": "sufficient",
-   "retry_count": 0,
+   "grade": "insufficient",
+   "retry_count": 2,
    "answered": true,
-   "latency_ms": 951,
-   "answer": "[가짜 LLM] 키가 설정되지 않아 답변을 생성하지 않았습니다. 검색된 근거만 확인하세요."
+   "latency_ms": 42467,
+   "answer": "제공된 근거만으로는 **5년 뒤 해약환급금의 금액을 확인할 수 없습니다.**  \n근거에는 해약환급금이 **납입보험료보다 적거나 없을 수도 있다**는 안내와, 해약환급금 산출 방식의 일반 설명만 있고, **5년 시점의 구체적인 해약환급금 금액표**는 없습니다. 따라서 현재 확인 가능한 범위에서는 **금액을 특정할 수 없습니다**. [1][3]\n\n원하시면 제가 근거 안에서 확인되는 **해약환급금 관련 설명**만 정리해드릴게요."
   }
  ],
- "generated_at": "2026-10-12T08:45:53+00:00",
- "llm": "fake"
+ "generated_at": "2026-10-13T04:51:22+00:00",
+ "llm": "openai:gpt-5.4-mini"
 }

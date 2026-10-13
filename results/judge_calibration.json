@@ -3,36 +3,36 @@
  "agreement": {
   "total": {
    "n": 17,
-   "exact": 0.059,
-   "within_1": 0.118,
-   "mae": 3.235
+   "exact": 0.353,
+   "within_1": 0.588,
+   "mae": 1.176
   },
   "basis_match": {
    "n": 17,
-   "exact": 0.941,
-   "within_1": 1.0,
-   "mae": 0.059
+   "exact": 0.882,
+   "within_1": 0.941,
+   "mae": 0.176
   },
   "numeric_ok": {
    "n": 17,
-   "exact": 0.235,
-   "within_1": 0.235,
-   "mae": 1.529
+   "exact": 1.0,
+   "within_1": 1.0,
+   "mae": 0.0
   },
   "no_extra_claim": {
    "n": 17,
-   "exact": 0.059,
-   "within_1": 0.176,
-   "mae": 1.765
+   "exact": 0.353,
+   "within_1": 0.529,
+   "mae": 1.118
   }
  },
- "judge_minus_human_avg": -3.235,
+ "judge_minus_human_avg": -1.176,
  "rows": [
   {
    "id": "S01",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
+    "numeric_ok": 2,
     "no_extra_claim": 0
    },
    "human": {
@@ -40,15 +40,15 @@
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "제31조·제35조 근거를 인용해 정의를 맞게 설명했지만, 제31조 범위를 넘어 약정결제비율 10~100%, 최소결제비율 10% 이상 등 다른 조항 내용을 추가해 근거 밖 진술이 섞였다."
   },
   {
    "id": "S02",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
+    "numeric_ok": 2,
     "no_extra_claim": 0
    },
    "human": {
@@ -56,9 +56,9 @@
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "제34조 근거 청크를 인용해 ‘산출방법서에 따라 계산’은 맞지만, 다른 조항 내용까지 덧붙여 근거 밖 진술이 섞였다."
   },
   {
    "id": "S03",
@@ -74,13 +74,13 @@
    },
    "judge_total": 2,
    "human_total": 3,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답은 7영업일 전인데 제출 답변은 3영업일 전이라고 하여 수치가 틀렸고, 추가로 3영업일 미통지 시 기한상실 규정을 함께 진술해 근거 범위를 벗어났습니다."
   },
   {
    "id": "S06",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
+    "numeric_ok": 2,
     "no_extra_claim": 0
    },
    "human": {
@@ -88,15 +88,15 @@
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "제7조 관련 근거 청크를 인용해 정답 요지를 맞췄고 수치·기준도 정확하지만, 약관에 없는 예외(진단계약, 1년 미만, 전문보험계약자)를 추가로 진술해 근거 밖 주장입니다."
   },
   {
    "id": "S07",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
+    "numeric_ok": 2,
     "no_extra_claim": 0
    },
    "human": {
@@ -104,15 +104,15 @@
     "numeric_ok": 2,
     "no_extra_claim": 1
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 5,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "제6조 3,4항에 맞는 50% 지급을 인용해 근거 일치는 적절하나, 별표1 기준 설명과 가입금액에 따라 달라질 수 있다는 문구가 원문 근거 범위를 벗어난 일반론으로 섞여 있습니다."
   },
   {
    "id": "S08",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
+    "numeric_ok": 2,
     "no_extra_claim": 0
    },
    "human": {
@@ -120,31 +120,31 @@
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "제19조 제1항의 적용 대상·상황·설명 의무를 맞게 인용했으나, 보험회사 임직원에 대한 준용 등 질문 밖의 추가 주장이 섞여 있습니다."
   },
   {
    "id": "S09",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
-    "no_extra_claim": 0
+    "numeric_ok": 2,
+    "no_extra_claim": 2
    },
    "human": {
     "basis_match": 2,
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 6,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답 근거 청크를 직접 인용했고, 산업기능요원이 가입대상이 아님을 문서 범위 내에서만 진술했으며 수치 판단이 필요한 문항도 아닙니다."
   },
   {
    "id": "S10",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
+    "numeric_ok": 2,
     "no_extra_claim": 0
    },
    "human": {
@@ -152,15 +152,15 @@
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "계약기간과 은행 합산 월 저축한도는 정답 요지와 일치하며 근거 청크도 포함했지만, 한 은행 월 저축한도 30만원 등의 문서 밖 추가 주장이 섞였습니다."
   },
   {
    "id": "S11",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
+    "numeric_ok": 2,
     "no_extra_claim": 0
    },
    "human": {
@@ -168,41 +168,41 @@
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "계약기간·가입금액은 정답 근거 청크를 인용해 맞게 제시했으나, 저축한도·최대 납입 가능액 등 질문 밖의 추가 주장이 섞여 있어 근거 밖 주장 없음은 0점입니다."
   },
   {
    "id": "S12",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
-    "no_extra_claim": 0
+    "numeric_ok": 2,
+    "no_extra_claim": 2
    },
    "human": {
     "basis_match": 2,
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 6,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답 근거가 포함된 청크(kakao_deposit_2026_txt#본문#5, kakao_deposit_terms_2024#제4조#1)를 인용했고, 금액·단위·기준일을 함께 제시했으며, 인용 범위 밖의 추가 사실도 없습니다."
   },
   {
    "id": "S13",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
-    "no_extra_claim": 0
+    "numeric_ok": 2,
+    "no_extra_claim": 2
    },
    "human": {
     "basis_match": 2,
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 6,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "제3조#1의 근거를 인용해 가입대상을 정확히 제시했고, 숫자·대상 표현도 정답과 일치하며 근거 밖 주장도 없다."
   },
   {
    "id": "S14",
@@ -218,12 +218,12 @@
    },
    "judge_total": 2,
    "human_total": 2,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답 근거와 같은 문서를 인용했지만, 답변은 ‘1개월 미만’ 면제라는 정답 요지를 직접 제시하지 못했고 오히려 만기 기준이 없다고 반대로 진술했습니다. 또한 문서에 없는 일반론(잔여일수에 따라 달라질 수 있음, 동일은행 재계약 해지 시 면제 등)을 섞어 근거 밖 주장을 했습니다."
   },
   {
    "id": "S20",
    "judge": {
-    "basis_match": 2,
+    "basis_match": 0,
     "numeric_ok": 0,
     "no_extra_claim": 0
    },
@@ -232,31 +232,31 @@
     "numeric_ok": 0,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 0,
    "human_total": 4,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답 근거와 다른 금액(35만원/17만5천원)을 제시했고, gold 인용 조항도 맞지 않으며 근거 밖 주장으로 판단됩니다."
   },
   {
    "id": "S22",
    "judge": {
     "basis_match": 2,
     "numeric_ok": 0,
-    "no_extra_claim": 0
+    "no_extra_claim": 2
    },
    "human": {
     "basis_match": 2,
     "numeric_ok": 0,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 4,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "기준일은 맞지만 수수료율 범위가 정답과 달라 값이 틀립니다."
   },
   {
    "id": "S23",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
+    "numeric_ok": 2,
     "no_extra_claim": 0
    },
    "human": {
@@ -264,43 +264,43 @@
     "numeric_ok": 2,
     "no_extra_claim": 1
    },
-   "judge_total": 2,
+   "judge_total": 4,
    "human_total": 5,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답 요지(약정이율×55%)를 금리 규칙으로 맞게 제시했으며 인용 청크도 포함됨. 다만 '실제 적용되는 약정이율' 등 문서 밖 일반론이 섞여 있어 근거 밖 주장 없음은 0점."
   },
   {
    "id": "S24",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
-    "no_extra_claim": 0
+    "numeric_ok": 2,
+    "no_extra_claim": 2
    },
    "human": {
     "basis_match": 2,
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 6,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답 요지인 아멕스 국제브랜드 수수료율 1.4%를 정확히 제시했고, 인용 청크도 gold 근거에 포함되며, 추가로 근거 밖 사실을 진술하지 않았습니다."
   },
   {
    "id": "S25",
    "judge": {
     "basis_match": 2,
-    "numeric_ok": 0,
-    "no_extra_claim": 0
+    "numeric_ok": 2,
+    "no_extra_claim": 1
    },
    "human": {
     "basis_match": 2,
     "numeric_ok": 2,
     "no_extra_claim": 2
    },
-   "judge_total": 2,
+   "judge_total": 5,
    "human_total": 6,
-   "reason": "LLM 키가 없어 근거 일치만 기계 채점"
+   "reason": "정답 수치와 근거 청크를 맞게 인용했으나, ‘연체이자율은 대출이자율 + …로 적용’ 같은 일반 설명이 근거 범위 밖의 서술로 섞여 있다."
   }
  ],
- "generated_at": "2026-10-12T08:45:24+00:00",
- "llm": "fake"
+ "generated_at": "2026-10-13T04:35:35+00:00",
+ "llm": "openai:gpt-5.4-mini"
 }
